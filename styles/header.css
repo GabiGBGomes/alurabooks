@@ -7,6 +7,14 @@
     display: inline-block;
 }
 
+.container__botao~.container__rotulo>.cabecalho__menu-hamburguer{
+    background-image: url("../imagens/menu_white.png");
+}
+
+.container__botao:checked~.container__rotulo{
+    background: var(--azul-degrade);
+}
+
 .cabecalho {
     background-color: var(--branco);
     display: flex;
@@ -56,7 +64,8 @@
 
 .container__botao {
     display: none;
-} 
+}
+
 .container__titulo{
     display: none;
 }
@@ -150,6 +159,13 @@
    .opçoes{
     margin-right: auto;
    }
+   
+   .container__texto{
+    display: block;
+   }
+}
+
+
    
    .container__texto{
     display: block;
